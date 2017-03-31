@@ -1,0 +1,41 @@
+.map {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#choose-your-adventure {
+  text-align: center;
+  margin: 0;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.choice-container  {
+  width: 75%;
+  background-color: #4E342E;
+  color: white;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.individual-state {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#state-box {
+  margin-top: 5%;
+  margin-left: 2%;
+}

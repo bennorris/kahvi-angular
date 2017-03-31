@@ -1,0 +1,34 @@
+<body>
+
+<div class="row" id="choose-your-adventure">
+  <div class="col-md-4">
+    <div class="choice-container" ng-click="showMap()">
+      <h1>STATE </h1>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="choice-container">
+      <h1>ORIGIN </h1>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="choice-container">
+      <h1>ROAST</h1>
+    </div>
+  </div>
+</div>
+
+<div class="map hidden">
+  <input type="text" class="search-states" placeholder="search" ng-model="searchStates"></input>
+  <div class="row" id="state-box">
+  <div ng-repeat="n in statePages | filter:searchStates ">
+    <div ng-if=" searchStates != '' ">
+      <div class="col-md-2 individual-state">
+      <img src="{{n.img}}"><a href="{{n.site}}">{{n.state}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
